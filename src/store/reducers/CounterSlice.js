@@ -20,7 +20,3 @@ const slice = createSlice({
 export default slice.reducer
 
 export const {addCount, reduceCount} = slice.actions
-
-//test branch
-
-//testt
