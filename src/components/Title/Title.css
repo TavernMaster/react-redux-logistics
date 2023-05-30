@@ -1,20 +1,57 @@
 .photo {
-    background-size:cover;
+    user-select: none;
+    background-size: cover;
     background-image: url("./assets/Photo.png");
     background-position: bottom;
 }
 
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 875px;
 }
 
 .gradient {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 497px;
     background: linear-gradient(90.93deg, #032D5F 18.18%, rgba(9, 18, 66, 0.2) 65%);
 }
 
 .inside {
     width: 1200px;
+}
+
+.inside-block-home {
+    width: 571px;
+}
+
+.inside-block {
+    width: 750px;
+}
+
+.highText {
+    color: white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+}
+
+.lowText {
+    margin-top: 6px;
+    color: white;
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.52%;
+}
+
+.buttonn {
+    margin-top: 24px;
+    text-decoration: none;
 }
