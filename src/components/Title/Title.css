@@ -1,0 +1,20 @@
+.photo {
+    background-size:cover;
+    background-image: url("./assets/Photo.png");
+    background-position: bottom;
+}
+
+.home {
+    height: 875px;
+}
+
+.gradient {
+    display: flex;
+    justify-content: center;
+    height: 497px;
+    background: linear-gradient(90.93deg, #032D5F 18.18%, rgba(9, 18, 66, 0.2) 65%);
+}
+
+.inside {
+    width: 1200px;
+}

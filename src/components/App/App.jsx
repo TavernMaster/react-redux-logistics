@@ -1,3 +1,5 @@
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 import AppRoutes from '../Routes/AppRoutes'
 
 function App() {

@@ -1,9 +1,9 @@
-import React from 'react'
+import Title from "../Title/Title"
 
-const Home = () => {
-  return (
-    <div>Home</div>
+const Home = () => (
+    <>
+      <Title isHome={true}></Title>
+    </>
   )
-}
 
 export default Home
