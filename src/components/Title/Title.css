@@ -24,11 +24,11 @@
     width: 1200px;
 }
 
-.insideBlockHome {
+.inside-block-home {
     width: 571px;
 }
 
-.insideBlock {
+.inside-block {
     width: 750px;
 }
 
@@ -51,8 +51,7 @@
     line-height: 151.52%;
 }
 
-.button {
-    display: inline-block;
+.buttonn {
     margin-top: 24px;
     text-decoration: none;
 }
