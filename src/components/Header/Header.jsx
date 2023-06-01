@@ -1,4 +1,4 @@
-import './Header.css'
+import styles from './Header.module.css'
 import logo from './assets/Logo.png'
 import time from './assets/TimeIcon.png'
 import email from './assets/EmailIcon.png'
@@ -21,13 +21,13 @@ const Header = () => {
 export default Header
 
 const InfoPanel = () => (
-	<header className="header">
-		<div className="headerInside">
-			<div className="logo">
+	<header className={styles.header}>
+		<div className={styles.headerInside}>
+			<div className={styles.logo}>
 				<img src={logo} alt="Logo" />
-				<h1 className="logoName">TransitFlow</h1>
+				<h1 className={styles.logoName}>TransitFlow</h1>
 			</div>
-			<ul className="infoList">
+			<ul className={styles.infoList}>
 				<InfoItem img={time} imgInfo="Work time" info="Mon - Sat 9.00 - 18.00" info2="Sunday Closed" />
 				<InfoItem img={email} imgInfo="Email" info="Email" info2="contact@logistics.com" />
 				<InfoItem img={phone} imgInfo="Phone number" info="Call Us" info2="(00) 112 365 489" />
@@ -37,9 +37,9 @@ const InfoPanel = () => (
 )
 
 const InfoItem = ({img, imgAlt, info, info2}) => (
-	<li className="infoItem">
-		<img className="icon" src={img} alt={imgAlt} />
-		<div className="infoText">
+	<li className={styles.infoItem}>
+		<img className={styles.icon} src={img} alt={imgAlt} />
+		<div className={styles.infoText}>
 			<p>{info}</p>
 			<p>{info2}</p>
 		</div>
@@ -47,31 +47,31 @@ const InfoItem = ({img, imgAlt, info, info2}) => (
 )
 
 const NavMenu = () => (
-	<nav className="nav">
-		<div className="navInside">
-			<ul className="routes">
-				<NavLink className="route" to="/">
+	<nav className={styles.nav}>
+		<div className={styles.navInside}>
+			<ul className={styles.routes}>
+				<NavLink className={styles.route} to="/">
 					Home
 				</NavLink>
 				<hr />
-				<NavLink className="route" to="/about">
+				<NavLink className={styles.route} to="/about">
 					About
 				</NavLink>
 				<hr />
-				<NavLink className="route" to="/projects">
+				<NavLink className={styles.route} to="/projects">
 					Projects
 				</NavLink>
 				<hr />
-				<NavLink className="route" to="/price">
+				<NavLink className={styles.route} to="/price">
 					Price
 				</NavLink>
 				<hr />
-				<NavLink className="route" to="/contact">
+				<NavLink className={styles.route} to="/contact">
 					Contact
 				</NavLink>
 			</ul>
-			<div className="linksAndButton">
-				<ul className="links">
+			<div className={styles.linksAndButton}>
+				<ul className={styles.links}>
 					<Link to="">
 						<img src={instagram} alt="instagram" />
 					</Link>
@@ -85,7 +85,7 @@ const NavMenu = () => (
 						<img src={linkdin} alt="linkdin" />
 					</Link>
 				</ul>
-				<Link className="requestLink" to="/price">
+				<Link className={styles.requestLink} to="/price">
 					Request Quote
 				</Link>
 			</div>
