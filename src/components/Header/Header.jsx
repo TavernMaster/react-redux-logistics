@@ -77,7 +77,7 @@ const NavMenu = () => (
 						<img src={linkdin} alt="linkdin" />
 					</Link>
 				</ul>
-				<Link className={styles.requestLink} to="/price">
+				<Link to="/price" className={styles.requestLink}>
 					<p className={styles.requestText}>Request Quote</p>
 				</Link>
 			</div>
