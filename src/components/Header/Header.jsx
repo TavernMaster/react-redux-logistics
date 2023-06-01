@@ -1,13 +1,14 @@
 import styles from './Header.module.css'
-import logo from './assets/Logo.png'
 import time from './assets/TimeIcon.png'
 import email from './assets/EmailIcon.png'
 import phone from './assets/PhoneIcon.png'
-import instagram from './assets/Instagram.png'
-import facebook from './assets/Facebook.png'
-import twitter from './assets/Twitter.png'
-import linkdin from './assets/Linkdin.png'
+import instagram from '../../assets/Instagram.png'
+import facebook from '../../assets/Facebook.png'
+import twitter from '../../assets/Twitter.png'
+import linkdin from '../../assets/Linkdin.png'
 import {Link, NavLink} from 'react-router-dom'
+import Logo from '../ui/Logo/Logo'
+import InfoItem from './InfoItem'
 
 const Header = () => {
 	return (
@@ -23,10 +24,7 @@ export default Header
 const InfoPanel = () => (
 	<header className={styles.header}>
 		<div className={styles.headerInside}>
-			<div className={styles.logo}>
-				<img src={logo} alt="Logo" />
-				<h1 className={styles.logoName}>TransitFlow</h1>
-			</div>
+			<Logo />
 			<ul className={styles.infoList}>
 				<InfoItem img={time} imgInfo="Work time" info="Mon - Sat 9.00 - 18.00" info2="Sunday Closed" />
 				<InfoItem img={email} imgInfo="Email" info="Email" info2="contact@logistics.com" />
@@ -36,38 +34,32 @@ const InfoPanel = () => (
 	</header>
 )
 
-const InfoItem = ({img, imgAlt, info, info2}) => (
-	<li className={styles.infoItem}>
-		<img className={styles.icon} src={img} alt={imgAlt} />
-		<div className={styles.infoText}>
-			<p>{info}</p>
-			<p>{info2}</p>
-		</div>
-	</li>
-)
-
 const NavMenu = () => (
 	<nav className={styles.nav}>
 		<div className={styles.navInside}>
 			<ul className={styles.routes}>
-				<NavLink className={styles.route} to="/">
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/">
 					Home
 				</NavLink>
 				<hr />
-				<NavLink className={styles.route} to="/about">
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/about">
 					About
 				</NavLink>
 				<hr />
-				<NavLink className={styles.route} to="/projects">
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/projects">
 					Projects
 				</NavLink>
 				<hr />
-				<NavLink className={styles.route} to="/price">
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/price">
 					Price
 				</NavLink>
 				<hr />
-				<NavLink className={styles.route} to="/contact">
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/contact">
 					Contact
+				</NavLink>
+				<hr />
+				<NavLink className={({isActive}) => (isActive ? styles.active + ' ' + styles.route : styles.route)} to="/blog">
+					Blog
 				</NavLink>
 			</ul>
 			<div className={styles.linksAndButton}>
@@ -86,7 +78,7 @@ const NavMenu = () => (
 					</Link>
 				</ul>
 				<Link className={styles.requestLink} to="/price">
-					Request Quote
+					<p className={styles.requestText}>Request Quote</p>
 				</Link>
 			</div>
 		</div>

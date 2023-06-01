@@ -1,9 +1,16 @@
-import './Footer.css'
+import styles from './Footer.module.css'
 
-const Footer = () => {
-  return (
-    <footer>Footer</footer>
-  )
-}
+import UpFooter from './UpFooter'
+import CenterFooter from './CenterFooter'
+import DownFooter from './DownFooter'
+
+const Footer = () => (
+	<>
+		<UpFooter />
+		<CenterFooter />
+		<hr className={styles.hr} />
+		<DownFooter />
+	</>
+)
 
 export default Footer

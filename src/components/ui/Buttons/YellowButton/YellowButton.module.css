@@ -1,4 +1,8 @@
 .button {
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
     width: fit-content;
     background: linear-gradient(94.06deg, #FFB629 -1.21%, #FFDA56 58.66%, #FFD7A6 116.84%);
     padding: 19px 48px;
@@ -9,4 +13,38 @@
     font-size: 16px;
     line-height: 135.02%;
     text-decoration: none;
+    z-index: 0;
+}
+
+@keyframes hover {
+    from {
+        width: 52px;
+        height: 52px;
+        left: 159px;
+        top: 36px;
+    }
+
+    to {
+        width: 206px;
+        height: 206px;
+        left: 74px;
+        top: -43px;
+    }
+}
+
+.circle {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    left: 159px;
+    top: 36px;
+    border-radius: 300px;
+    z-index: -1;
+    transition: 0.6s;
+
+    background: #FFFFFF;
+}
+
+.button:hover .circle {
+    transform: scale(4.5);
 }

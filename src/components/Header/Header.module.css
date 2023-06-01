@@ -28,25 +28,9 @@
     align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@500;600&family=Rubik:wght@600&display=swap');
-
-.logo {
-    display: flex;
-    height: 36px;
-    gap: 9px;
-}
-
-.logoName  {
-    font-family: Rubik;
-    color: white;
-    height: 63px;
-}
-
 .icon {
     height: 63px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@500;600&display=swap');
 
 .infoText {
     height: 40px;
@@ -109,9 +93,12 @@
 .requestLink {
     padding: 28px 52px 28px 52px;
     text-decoration: none;
-    font-family: Krub;
-    font-style: normal;
     background-color: white;
+    color: black;
+}
+
+.requestText {
+    font-weight: 600;
     color: black;
 }
 

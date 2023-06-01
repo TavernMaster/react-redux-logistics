@@ -1,0 +1,146 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 118px;
+    background: hsl(231, 50%, 25%);
+}
+
+.insideNav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1290px;
+}
+
+.logoDiv {
+    height: 100%;
+    width: 427px;
+
+    box-sizing:border-box;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 45px;
+    background: #091242;
+}
+
+.pages {
+    margin-left: 80px;
+}
+
+.utility {
+    margin-left: 160px;
+}
+
+.subscribe {
+    margin-left: 155px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 372px;
+    background: #091242;
+}
+
+.insideFooter {
+    display: flex;
+    box-sizing: border-box;
+    padding: 39px 0px;
+    width: 1200px;
+}
+
+.mainInfo {
+    min-width: 319px;
+    max-width: 319px;
+}
+
+.infoItem {
+    margin-top: 30px;
+}
+
+.pagesInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+    white-space: nowrap;
+    margin-left: 140px;
+    width: 86px;
+}
+
+.utilityInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+    white-space: nowrap;
+    margin-left: 150px;
+    width: 86px;
+}
+
+.subscribeForm {
+    margin-left: 140px;
+    width: 317px;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 280px;
+    height: 60px;
+
+    padding: 21px 30px;
+
+    background: #00000000;
+    border: #999999 1px solid;
+    font-size: 16px;
+    color: white;
+
+    outline-style: none;
+}
+
+.buttonAndLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img {
+    height: 22px;
+}
+
+.hr {
+    height: 1px;
+    width: 100%;
+    background-color: #4E5683;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 73px;
+    background: #091242;
+}
+
+.insideCopyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 400;
+    color: #8388A7;
+}
