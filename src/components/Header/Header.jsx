@@ -62,8 +62,8 @@ const NavMenu = () => (
 					Blog
 				</NavLink>
 			</ul>
-			<div className="linksAndButton">
-				<ul className="links">
+			<div className={styles.linksAndButton}>
+				<ul className={styles.links}>
 					<Link to="">
 						<img src={instagram} alt="instagram" />
 					</Link>
@@ -77,7 +77,7 @@ const NavMenu = () => (
 						<img src={linkdin} alt="linkdin" />
 					</Link>
 				</ul>
-				<Link to="/price" className={styles.requestLink}>
+				<Link to="/price" className={styles.button}>
 					<p className={styles.requestText}>Request Quote</p>
 				</Link>
 			</div>

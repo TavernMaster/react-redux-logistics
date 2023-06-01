@@ -51,7 +51,8 @@
     line-height: 151.52%;
 }
 
-.buttonn {
+.button {
+    display: block;
     margin-top: 24px;
     text-decoration: none;
 }
