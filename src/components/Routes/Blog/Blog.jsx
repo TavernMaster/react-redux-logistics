@@ -1,5 +1,9 @@
+import Title from "../../Title/Title"
+
 const Blog = () => (
-    <div>Blog</div>
+	<>
+		<Title tag="Blog" title="Our Latest News" />
+	</>
 )
-  
+
 export default Blog

@@ -1,0 +1,69 @@
+.aboutUs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 734px;
+    background: white;
+}
+
+.imgBoard {
+    margin: 0px -270px;
+    background-image: url(./assets/Image.png);
+    height: 531px;
+    width: 766px;
+}
+
+.inside {
+    height: 531px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.inInside {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 604px;
+}
+
+.text {
+    color: black;
+    margin-top: 15px;
+}
+
+.text2 {
+    color: #666C89;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.buttons {
+    margin-top: 19px;
+    display: flex;
+    gap: 14px;
+}
+
+.buttonText {
+    font-family: 'Krub';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    color: black;
+}
+
+.text3 {
+    color: #666C89;
+    font-weight: 500;
+    margin-top: 27px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    margin-top: 35px;
+}

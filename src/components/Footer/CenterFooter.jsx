@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
 import InfoItem from '../Header/InfoItem'
-import YellowButton from '../ui/Buttons/YellowButton/YellowButton'
+import Button from '../ui/buttons/Button/Button'
 import email from '../Header/assets/EmailIcon.png'
 import phone from '../Header/assets/PhoneIcon.png'
 
@@ -42,13 +42,13 @@ const СenterFooter = () => (
 			<form className={styles.subscribeForm}>
 				<input autoComplete='email' name='email' type="email" placeholder="Email here*" className={styles.input} />
 				<div className={styles.buttonAndLinks}>
-					<YellowButton
+					<Button
 						onClick={() => {
 							console.log('Send Now :)')
 						}}
 					>
 						Send Now
-					</YellowButton>
+					</Button>
 					<img className={styles.img} src={linkdin} alt="linkdin" />
 					<img className={styles.img} src={twitter} alt="linkdin" />
 					<img className={styles.img} src={facebook} alt="linkdin" />
