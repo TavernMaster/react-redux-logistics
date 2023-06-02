@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div>About</div>
+    <div><Title
+    tag="About Us"
+    title="About Our Logistics"
+  /></div>
   )
 }
 
